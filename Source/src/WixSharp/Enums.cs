@@ -770,7 +770,7 @@ namespace WixSharp
     public enum VariableType
     {
         /// <summary>
-        /// The string type
+        /// The literal string type
         /// </summary>
         @string,
 
@@ -782,7 +782,12 @@ namespace WixSharp
         /// <summary>
         /// The version type
         /// </summary>
-        version
+        version,
+
+        /// <summary>
+        /// A string that may contain Variables
+        /// </summary>
+        formatted,
     }
 
     /// <summary>
